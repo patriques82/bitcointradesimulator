@@ -1,11 +1,8 @@
-public class SignalInterval {
-    private final int startTime;
-    private final int endTime;
+public class SignalInterval extends Interval {
     private final Signal signal; // BUY, SELL
 
     public SignalInterval(int startTime, int endTime, Signal signal) {
-        this.startTime = startTime;
-        this.endTime = endTime;
+        super(startTime, endTime);
         this.signal = signal;
     }
 
